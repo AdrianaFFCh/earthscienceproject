@@ -28,6 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
     earthProcessesLink.parentNode.style.position = 'relative';
     earthProcessesLink.appendChild(dropdown);
     
+    // Prevent dropdown from closing when clicking on items
+    const dropdownItems = dropdown.querySelectorAll('.dropdown-item');
+    dropdownItems.forEach(function(item) {
+      item.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+    });
+    
     // Toggle dropdown on click
     let isOpen = false;
     earthProcessesLink.addEventListener('click', function(e) {
