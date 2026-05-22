@@ -605,3 +605,89 @@ a {
   border-radius: 12px;
   display: block;
 }
+/* Flag */
+.flag{
+  width:40px;
+  height:40px;
+  display:flex;
+  overflow:hidden;
+  border-radius:4px;
+  box-shadow:0 4px 10px rgba(0,0,0,.35);
+}
+
+/* SEGMENTOS */
+.slice{
+  flex:1;
+  height:100%;
+
+  background-image:
+
+    /* cruz azul vertical */
+    linear-gradient(
+      90deg,
+      transparent 27.27%,
+      #00205b 27.27%,
+      #00205b 36.36%,
+      transparent 36.36%
+    ),
+
+    /* cruz azul horizontal */
+    linear-gradient(
+      180deg,
+      transparent 43.75%,
+      #00205b 43.75%,
+      #00205b 56.25%,
+      transparent 56.25%
+    ),
+
+    /* cruz blanca vertical */
+    linear-gradient(
+      90deg,
+      transparent 22.72%,
+      #ffffff 22.72%,
+      #ffffff 40.9%,
+      transparent 40.9%
+    ),
+
+    /* cruz blanca horizontal */
+    linear-gradient(
+      180deg,
+      transparent 37.5%,
+      #ffffff 37.5%,
+      #ffffff 62.5%,
+      transparent 62.5%
+    ),
+
+    /* fondo rojo */
+    linear-gradient(#ba0c2f,#ba0c2f);
+
+  background-size:40px 40px;
+  background-repeat:no-repeat;
+
+  animation:wave 1.4s ease-in-out infinite;
+}
+
+/* ONDA */
+@keyframes wave{
+  0%{
+    transform:translateY(-2px);
+    filter:brightness(1.1);
+  }
+
+  100%{
+    transform:translateY(2px);
+    filter:brightness(.78);
+  }
+}
+
+/* 10 columnas */
+.slice:nth-child(1){background-position:calc(-40px / 10 * 0) 0;animation-delay:0s;}
+.slice:nth-child(2){background-position:calc(-40px / 10 * 1) 0;animation-delay:.05s;}
+.slice:nth-child(3){background-position:calc(-40px / 10 * 2) 0;animation-delay:.10s;}
+.slice:nth-child(4){background-position:calc(-40px / 10 * 3) 0;animation-delay:.15s;}
+.slice:nth-child(5){background-position:calc(-40px / 10 * 4) 0;animation-delay:.20s;}
+.slice:nth-child(6){background-position:calc(-40px / 10 * 5) 0;animation-delay:.25s;}
+.slice:nth-child(7){background-position:calc(-40px / 10 * 6) 0;animation-delay:.30s;}
+.slice:nth-child(8){background-position:calc(-40px / 10 * 7) 0;animation-delay:.35s;}
+.slice:nth-child(9){background-position:calc(-40px / 10 * 8) 0;animation-delay:.40s;}
+.slice:nth-child(10){background-position:calc(-40px / 10 * 9) 0;animation-delay:.45s;}
