@@ -25,24 +25,123 @@
     <section class="section">
       <p class="section-title">Plate Tectonics, Earthquakes, and Volcanoes</p>
       <p class="section-copy">
-        This week's focus is on understanding Norway's position within global plate tectonics, its seismic activity, and volcanic history. While Norway is not known for active volcanoes today, its geological history reveals fascinating tectonic events.
       </p>
-      
-      <div class="info-card">
-        <h3>Week 2 Research Topics</h3>
-        <p>
-          • Norway's tectonic setting: position relative to Eurasian and North American plates<br>
-          • Ancient mountain-building events (Caledonian orogeny)<br>
-          • Seismic activity in Norway: causes and frequency<br>
-          • Volcanic rocks in Norway's geological record<br>
-          • Post-glacial rebound and its effects on crustal stress
-        </p>
+
+      <!-- Carousel Section -->
+      <div class="carousel-section">
+        <h2 style="text-align:center; font-size:clamp(1.5rem, 2.5vw, 2rem); margin-bottom:1.5rem;">
+          Information
+        </h2>
+        
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous slide">&#8249;</button>
+          <button class="carousel-btn next" id="carouselNext" aria-label="Next slide">&#8250;</button>
+          <div class="carousel-track" id="carouselTrack">
+            
+            <!-- SLIDE 1: Tectonic Plates and Natural Disasters -->
+            <div class="carousel-slide">
+              <img class="carousel-image"
+                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/EurasianPlate.png/1280px-EurasianPlate.png"
+                   alt="Tectonic plates illustration">
+              
+              <div class="carousel-slide-content">
+                <h3>🧭 Tectonic Plates and Natural Disasters</h3>
+                <p>Norway is located on the Eurasian Plate, far from active tectonic plate boundaries. Because of this, it is considered a geologically stable region. There are no major plate boundaries nearby, such as convergent or divergent boundaries, which are usually responsible for strong earthquakes and volcanic activity.</p>
+              </div>
+            </div>
+            
+            <!-- SLIDE 2: Rock and Mineral Resources -->
+            <div class="carousel-slide">
+              <img class="carousel-image"
+                   src="https://cdn.sanity.io/images/loal7n8w/business-norway-prod/ae6c8583dcde174e6564a1b539f6ceb008dbc50d-1920x960.jpg"
+                   alt="Natural resources illustration">
+              
+              <div class="carousel-slide-content">
+                <h3>⛏️ Rock and Mineral Resources</h3>
+                <p>Norway has a wide variety of natural resources, including rocks such as granite, marble, and limestone. It also has important minerals like iron ore and titanium, which are used in construction and manufacturing.</p>
+              </div>
+            </div>
+            
+            <!-- SLIDE 3: Earthquakes -->
+            <div class="carousel-slide">
+              <img class="carousel-image"
+                   src="https://gelogia.com/wp-content/uploads/2026/05/Norways-Earthquakes--1080x675.webp"
+                   alt="Earthquake illustration">
+              
+              <div class="carousel-slide-content">
+                <h3>🌎 Earthquakes</h3>
+                <p>Norway does not experience many strong earthquakes because it is located far from tectonic plate boundaries. Most earthquakes in the country are small and do not cause damage.</p>
+              </div>
+            </div>
+            
+            <!-- SLIDE 4: Mountain Ranges and Volcanoes -->
+            <div class="carousel-slide">
+              <img class="carousel-image"
+                   src="https://www.celebritycruises.com/blog/content/uploads/2022/01/norway-mountains-mount-hoven--1024x768.jpg"
+                   alt="Norway physical and topographic map">
+              
+              <div class="carousel-slide-content">
+                <h3>🏔️🌋 Mountain Ranges and Volcanoes</h3>
+                <p>The Scandinavian Mountains run through Norway and are one of the country’s most important physical features. These mountains are very old and have been shaped by erosion over millions of years, but they still reach high elevations.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- DOTS -->
+          <div class="carousel-dots" id="carouselDots">
+            <button class="carousel-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+            <button class="carousel-dot" data-slide="1" aria-label="Go to slide 2"></button>
+            <button class="carousel-dot" data-slide="2" aria-label="Go to slide 3"></button>
+            <button class="carousel-dot" data-slide="3" aria-label="Go to slide 4"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q&A Section -->
+      <div class="qa-section">
+        <h2>More About Norway's Geology</h2>
+        <div class="qa-grid">
+          <div class="qa-card">
+            <div class="qa-card-icon">🌍</div>
+            <h4>How do Norway's tectonic plates affect natural disasters?</h4>
+            <p>As a result, Norway does not experience frequent natural disasters like large earthquakes, volcanoes, or tsunamis. However, small earthquakes can occasionally occur due to internal stress within the Earth's crust. In rare cases, underwater landslides in fjords have caused local tsunami-like waves.</p>
+          </div>
+          <div class="qa-card">
+            <div class="qa-card-icon">⛏️</div>
+            <h4>What are Norway's key economic resources and their environmental impacts?</h4>
+            <p>One of Norway’s most important economic resources is oil and natural gas, which are extracted from the North Sea. These resources provide many jobs and make Norway one of the wealthiest countries in the world. Norway exports oil and gas mainly to countries in Europe.
+
+However, resource extraction can also have environmental impacts, such as pollution and damage to ecosystems. The Norwegian government has strict regulations to reduce these effects.</p>
+          </div>
+          <div class="qa-card">
+            <div class="qa-card-icon">🌐</div>
+            <h4>What is the seismic activity like in Norway and how is it monitored?</h4>
+            <p>One of the most significant earthquakes occurred in 1904 near Oslo. Although it was relatively strong for the region, it caused limited damage compared to earthquakes in more active areas.
+
+Today, the government monitors seismic activity and ensures that buildings are constructed to be safe, even though the risk is low.</p>
+          </div>
+          <div class="qa-card">
+            <div class="qa-card-icon">⛰️🌋</div>
+            <h4>How do Norway's mountain ranges and volcanic history affect the country?</h4>
+            <p>The Scandinavian Mountains run through Norway and are one of the country’s most important physical features. These mountains are very old and have been shaped by erosion over millions of years, but they still reach high elevations.
+
+They affect the climate by blocking moist air from the Atlantic Ocean, causing heavy rainfall on the western coast. The mountains also play a key role in water supply by feeding rivers and glaciers.
+
+Culturally, the mountains have influenced settlement patterns and transportation. In the past, they made travel and trade more difficult, but today tunnels and roads help connect different regions.
+
+Norway does not have any active volcanoes because it is located far from tectonic plate boundaries. Most volcanic activity in the region occurred millions of years ago.
+
+Unlike nearby Iceland, which is volcanically active, Norway is considered geologically stable. Because of this, it does not face volcanic hazards such as eruptions or lava flows.
+
+However, this also means Norway does not benefit from volcanic soil or geothermal energy.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-<footer class="footer container" id="contact">
-    <p>Ready to make this page yours? Replace text and images, then share the final version.</p>
+  <footer class="footer container" id="contact">
+    <p></p>
     <div class="footer-nav">
       <a href="#top">Back to top</a>
       <a href="index.html">Home</a>
