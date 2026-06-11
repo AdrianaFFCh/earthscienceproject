@@ -36,23 +36,133 @@
     <section class="section">
       <p class="section-title">Fluvial Processes, Oceans, and Coastlines</p>
       <p class="section-copy">
-        This week's focus is on understanding how Norway's rivers, lakes, and coastal areas are shaped by water-related processes. Norway's extensive coastline and numerous waterways make it an excellent case study for fluvial and coastal processes.
       </p>
-      
-      <div class="info-card">
-        <h3>Week 4 Research Topics</h3>
-        <p>
-          • Norway's major river systems and their characteristics<br>
-          • Lake formation and distribution in glaciated terrain<br>
-          • Coastal processes: wave action, tidal effects, and sediment transport<br>
-          • Fjord formation and oceanography<br>
-          • Sea-level changes and coastal evolution since the last ice age
-        </p>
+
+      <!-- Carousel Section -->
+      <div class="carousel-section">
+        <h2 style="text-align:center; font-size:clamp(1.5rem, 2.5vw, 2rem); margin-bottom:1.5rem;">
+          More about 
+        </h2>
+        
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous slide">&#8249;</button>
+          <button class="carousel-btn next" id="carouselNext" aria-label="Next slide">&#8250;</button>
+          <div class="carousel-track" id="carouselTrack">
+            
+            <!-- SLIDE 1: Flooding -->
+            <div class="carousel-slide">
+              <img class="carousel-image"
+                   src="https://www.lifeinnorway.net/wp-content/uploads/2022/07/glomma-river-image.jpg"
+                   alt="Flooding in Norway">
+              
+              <div class="carousel-slide-content">
+                <h3>🌊 Flooding</h3>
+                <p>Flooding does occur in Norway, especially along rivers such as the Glomma River and in low-lying valleys. Flooding is most common during spring when snow melts rapidly or after heavy rainfall.</p>
+              </div>
+            </div>
+            
+            <!-- SLIDE 2: Land and River Trade Routes -->
+            <div class="carousel-slide">
+              <img class="carousel-image"
+                   src="https://assets.viking.com/is/image/viking/Trade-Routes-of-the-Middle-Ages-2026-1:2x1-widest?wid=1400&fit=constrain,0"
+                   alt="Norway trade routes illustration">
+              
+              <div class="carousel-slide-content">
+                <h3>🚢 Land and River Trade Routes</h3>
+                <p>Norway’s mountainous terrain makes land transportation difficult, so trade relies heavily on coastal shipping routes rather than rivers. Rivers like the Glomma are more important for hydropower than transportation.</p>
+              </div>
+            </div>
+            
+            <!-- SLIDE 3: Oceans, Ocean Currents, and Islands -->
+            <div class="carousel-slide">
+              <img class="carousel-image"
+                   src="https://cdn.britannica.com/91/53891-004-C4D5A103/ocean-systems-world.jpg"
+                   alt="Gulf Stream ocean current">
+              
+              <div class="carousel-slide-content">
+                <h3>🌊 Oceans, Ocean Currents, and Islands</h3>
+                <p>Norway borders the North Atlantic Ocean and is strongly influenced by the Gulf Stream. This warm ocean current keeps Norway’s climate milder than other regions at similar latitudes.</p>
+              </div>
+            </div>
+            
+            <!-- SLIDE 4: Coastlines and Hazards -->
+            <div class="carousel-slide">
+              <img class="carousel-image"
+                   src="https://nhess.copernicus.org/articles/20/673/2020/nhess-20-673-2020-f01-web.png"
+                   alt="Norway coastline with fjords">
+              
+              <div class="carousel-slide-content">
+                <h3>🏝️ Coastlines and Hazards</h3>
+                <p>Norway has one of the longest and most irregular coastlines in the world due to its many fjords. Fjords are deep, narrow inlets formed by glaciers.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- DOTS -->
+          <div class="carousel-dots" id="carouselDots">
+            <button class="carousel-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+            <button class="carousel-dot" data-slide="1" aria-label="Go to slide 2"></button>
+            <button class="carousel-dot" data-slide="2" aria-label="Go to slide 3"></button>
+            <button class="carousel-dot" data-slide="3" aria-label="Go to slide 4"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q&A Section -->
+      <div class="qa-section">
+        <h2>More About Norway's Water and Coastal Systems</h2>
+        <div class="qa-grid">
+          <div class="qa-card">
+            <div class="qa-card-icon">🌊</div>
+            <h4>How does flooding affect Norway and how is it managed?</h4>
+            <p>The Norwegian government manages flood risks through dams, levees, and monitoring systems. Early warning systems and land-use planning help reduce damage to communities and infrastructure.</p>
+          </div>
+          <div class="qa-card">
+            <div class="qa-card-icon">🚢</div>
+            <h4>What are Norway's main trade routes and their advantages/disadvantages?</h4>
+            <p>Norway’s main trade routes connect it to Europe through the North Sea. Its largest trading partners include countries like Germany, the United Kingdom, and Sweden. Norway exports mainly oil, natural gas, and seafood, while importing machinery, vehicles, and food products.
+
+Advantages:
+- Access to major sea routes
+- Strong export economy
+
+Disadvantages:
+- Difficult terrain for land transport
+- High infrastructure costs (tunnels, bridges)</p>
+          </div>
+          <div class="qa-card">
+            <div class="qa-card-icon">🌊</div>
+            <h4>How do ocean currents and islands influence Norway's climate and economy?</h4>
+            <p>Its proximity to the ocean:
+- Reduces extreme cold
+- Supports fishing industries
+- Allows easy access to global trade routes
+
+Norway also has thousands of islands, including the Lofoten Islands. These islands support fishing, tourism, and cultural traditions.</p>
+          </div>
+          <div class="qa-card">
+            <div class="qa-card-icon">⚠️</div>
+            <h4>What are the characteristics of Norway's coastline and what risks does it face?</h4>
+            <p>The coastline is mostly rocky and steep, with limited sandy beaches.
+
+Positive impacts:
+- Excellent natural harbors
+- Strong fishing and shipping industries
+
+Negative impacts:
+- Difficult construction and transportation
+- Risk of landslides along steep coastal cliffs
+
+Norway does not experience hurricanes because of its northern location and cold climate.
+
+However, small tsunamis have occurred due to landslides in fjords. A well-known example is the Tafjord disaster in 1934, when a rockslide created a large wave that caused significant damage and loss of life.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-<footer class="footer container" id="contact">
+  <footer class="footer container" id="contact">
     <p>Ready to make this page yours? Replace text and images, then share the final version.</p>
     <div class="footer-nav">
       <a href="#top">Back to top</a>
